@@ -1,0 +1,24 @@
+{
+  "name": "autofix",
+  "version": "0.6.0",
+  "description": "Automatically fix all software bugs.",
+  "homepage": "https://github.com/khulnasoft/autofix",
+  "bugs": {
+    "url": "https://github.com/khulnasoft/autofix/issues"
+  },
+  "license": "MIT",
+  "bin": "bin/autofix",
+  "main": "autofix.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khulnasoft/autofix"
+  },
+  "scripts": {
+    "release": "npm version patch && git push origin main --tags",
+    "test": "node tests.js"
+  },
+  "dependencies": {
+    "minimist": "1.2.6"
+  },
+  "devDependencies": {}
+}
